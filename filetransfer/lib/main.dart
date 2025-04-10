@@ -1,5 +1,6 @@
 import 'package:filetransfer/pages/splash.dart';
 import 'package:flutter/material.dart';
+import 'package:filetransfer/themes/theme.dart';
 
 void main() {
   runApp(const MainApp());
@@ -10,9 +11,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Splash(),
+    return MaterialApp(
+      home: const Splash(),
       debugShowCheckedModeBanner: false,
+      theme: lightMode,
     );
   }
 }
