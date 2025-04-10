@@ -20,3 +20,6 @@ flutter:
   uses-material-design: true
   assets:
      - lib/assets/splashImage.png
+     - lib/assets/sendImage.png
+     - lib/assets/receivedImage.png
+     - lib/assets/itemImage.png

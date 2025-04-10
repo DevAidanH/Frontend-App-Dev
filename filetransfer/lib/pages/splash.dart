@@ -1,3 +1,4 @@
+import 'package:filetransfer/pages/homepage.dart';
 import 'package:flutter/material.dart';
 
 class Splash extends StatelessWidget {
@@ -62,19 +63,24 @@ class Splash extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 20),
-                  child: Container(
-                    padding: EdgeInsets.symmetric(horizontal: 45, vertical: 10),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(40), 
-                      color:Theme.of(context).colorScheme.primary,
-                    ),
-                    child: Text(
-                      "Get Started",
-                      style: TextStyle(
-                        color: Theme.of(context).colorScheme.surface,
-                        fontSize: 18
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => Homepage()));
+                    },
+                    child: Container(
+                      padding: EdgeInsets.symmetric(horizontal: 45, vertical: 10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(40), 
+                        color:Theme.of(context).colorScheme.primary,
                       ),
-                    )
+                      child: Text(
+                        "Get Started",
+                        style: TextStyle(
+                          color: Theme.of(context).colorScheme.surface,
+                          fontSize: 18
+                        ),
+                      )
+                    ),
                   ),
                 )
               ],
