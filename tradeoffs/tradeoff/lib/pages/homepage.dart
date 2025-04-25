@@ -26,12 +26,12 @@ class _HomepageState extends State<Homepage> {
                 bodyText: "Boldy Risk to accelerate AI and\nsecure a competitive edge."
               ),
               Mypage( //Page 1
-                imagePath: "lib/assets/swordT.png", 
+                imagePath: "lib/assets/lockT.png", 
                 titleText: "Tradeoffs", 
                 bodyText: "Weigh risks, take steps and drive\nAI innovation strategically"
               ),
               Mypage( //Page 2
-                imagePath: "lib/assets/swordT.png", 
+                imagePath: "lib/assets/shieldT.png", 
                 titleText: "Risk Averse", 
                 bodyText: "Significantly reduce risk through\ncompliance and careful use of AI"
               )
