@@ -13,7 +13,7 @@ class CountryFilter extends StatefulWidget {
 }
 
 class _CountryFilterState extends State<CountryFilter> {
-  int? selected;
+  int? selected = 2;
 
   @override
   Widget build(BuildContext context) {

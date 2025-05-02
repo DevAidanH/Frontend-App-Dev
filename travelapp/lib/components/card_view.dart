@@ -1,5 +1,6 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
+import 'package:travelapp/components/card_contents.dart';
 
 class CardView extends StatefulWidget {
   const CardView({super.key});
@@ -9,6 +10,27 @@ class CardView extends StatefulWidget {
 }
 
 class _CardViewState extends State<CardView> {
+  List<CardContents> cards = [
+    CardContents(
+      countryName: "Brazil",
+      cityName: "Rio de Janeiro",
+      numberOfStars: 5.0,
+      numberOfReviews: 143,
+    ),
+    CardContents(
+      countryName: "North America",
+      cityName: "New York",
+      numberOfStars: 3.0,
+      numberOfReviews: 200,
+    ),
+    CardContents(
+      countryName: "Great Britain",
+      cityName: "London",
+      numberOfStars: 5.0,
+      numberOfReviews: 333,
+    ),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -25,9 +47,7 @@ class _CardViewState extends State<CardView> {
                 fit: StackFit.expand,
                 children: [ 
                   Image.asset("lib/assets/${index + 1}.jpg", fit: BoxFit.fill),
-                  Center(
-                    child: Text("Hello"),
-                  )
+                  cards[index]
                 ]
               ),
             );
