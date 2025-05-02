@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  card_swiper:
 
 dev_dependencies:
   flutter_test:
@@ -17,3 +18,8 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+     - lib/assets/profileT.jpg
+     - lib/assets/1.jpg
+     - lib/assets/2.jpg
+     - lib/assets/3.jpg
