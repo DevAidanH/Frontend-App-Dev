@@ -40,6 +40,7 @@ class _CardViewState extends State<CardView> {
       ),
       child: Swiper(
           itemCount: 3,
+          autoplay: true,
           itemBuilder: (context, index){
             return ClipRRect(
               borderRadius: BorderRadius.circular(30),
