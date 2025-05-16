@@ -7,4 +7,4 @@ A selection of front-end only mobile apps designed from popular dribbble.com des
 
 | Risk/Reward App | Travel App |
 |------------|------------|------------|  
-| ![Risk/Reward Screen](/Screenshots/tradeOffApp.gif?raw=true ) | ![Travel Screen](/Screenshots/travelApp.gif?raw=true )  | [Notes App](/Screenshots/notes.gif?raw=true )  
+| ![Risk/Reward Screen](/Screenshots/tradeOffApp.gif?raw=true ) | ![Travel Screen](/Screenshots/travelApp.gif?raw=true )  | ![Notes App](/Screenshots/notes.gif?raw=true )  |
