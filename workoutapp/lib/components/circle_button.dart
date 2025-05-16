@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CircleButton extends StatelessWidget {
+  // ignore: prefer_typing_uninitialized_variables
   final setIcon;
   const CircleButton({
     required this.setIcon,
