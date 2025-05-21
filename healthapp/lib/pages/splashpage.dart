@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:healthapp/pages/homepage.dart';
 
 class Splashpage extends StatelessWidget {
   const Splashpage({super.key});
@@ -51,7 +52,9 @@ class Splashpage extends StatelessWidget {
           //Button
           SizedBox(height: 50),
           GestureDetector(
-            onTap: (){},
+            onTap: (){
+              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Homepage()));
+            },
             child: Container(
               padding: EdgeInsets.all(10),
               width: 275,

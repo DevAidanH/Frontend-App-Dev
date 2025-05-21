@@ -20,3 +20,9 @@ flutter:
   uses-material-design: true
   assets:
       - lib/assets/cross.png
+      - lib/assets/Check-up.png
+      - lib/assets/Dental.png
+      - lib/assets/Cardiology.png
+      - lib/assets/doc1.jpg
+      - lib/assets/doc2.jpg
+      - lib/assets/doc3.jpg
