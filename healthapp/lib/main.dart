@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:healthapp/pages/splashpage.dart';
+import 'package:healthapp/themes/theme.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,12 +11,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return MaterialApp(
+      home: const Splashpage(),
+      debugShowCheckedModeBanner: false,
+      theme: lightMode,
     );
   }
 }
