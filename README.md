@@ -9,5 +9,4 @@ A selection of front-end only mobile apps designed from popular dribbble.com des
 |------------|------------|------------|  
 | ![Risk/Reward Screen](/Screenshots/tradeOffApp.gif?raw=true ) | ![Travel Screen](/Screenshots/travelApp.gif?raw=true )  | ![Notes App](/Screenshots/notes.gif?raw=true )  |
 | Notes App |
-|------------|
 | ![Med App](/Screenshots/med.gif?raw=true ) | 
