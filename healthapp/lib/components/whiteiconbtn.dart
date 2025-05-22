@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 
 class WhiteIconBtn extends StatelessWidget {
   final Icon inputIcon;
+  final bool isBackBtn;
   const WhiteIconBtn({
     required this.inputIcon,
-    super.key
+    this.isBackBtn = false,
+    super.key, 
   });
 
   @override
@@ -17,7 +19,7 @@ class WhiteIconBtn extends StatelessWidget {
       ),
       child: IconButton(
         padding: EdgeInsets.zero,
-        onPressed: (){}, 
+        onPressed: isBackBtn ? (){Navigator.pop(context);} : (){}, 
         icon: inputIcon
       ),
     );

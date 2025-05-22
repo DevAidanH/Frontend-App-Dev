@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:healthapp/data/doctor.dart';
+import 'package:healthapp/pages/bookingpage.dart';
 
 class Doctorcard extends StatelessWidget {
-  final String name;
-  final String hours;
-  final String imagePath;
-  final String stars;
+  final Doctor doctor;
+  final bool reducedCard;
   const Doctorcard({
-    required this.name,
-    required this.hours,
-    required this.imagePath,
-    required this.stars,
+    required this.doctor,
+    this.reducedCard = false,
     super.key
   });
 
@@ -30,8 +28,8 @@ class Doctorcard extends StatelessWidget {
           ClipRRect(
             borderRadius: BorderRadius.circular(12),
             child: Image.asset(
-              imagePath,
-              height: 150,
+              doctor.imagePath,
+              height: reducedCard ? 100 : 150,
               fit: BoxFit.cover,
             ),
           ),
@@ -45,7 +43,7 @@ class Doctorcard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      name,
+                      doctor.name,
                       style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     ),
                     RichText(text: TextSpan(
@@ -55,7 +53,7 @@ class Doctorcard extends StatelessWidget {
                       ),
                       children: [
                         WidgetSpan(child: Icon(Icons.star, color: Colors.amber, size: 16,)),
-                        TextSpan(text: stars)
+                        TextSpan(text: doctor.stars)
                       ]
                     ))
                   ],
@@ -73,28 +71,33 @@ class Doctorcard extends StatelessWidget {
                         alignment: PlaceholderAlignment.middle,
                         child: Icon(Icons.access_time, size: 16),
                       ),
-                      TextSpan(text: " $hours"),
+                      TextSpan(text: " ${doctor.hours}"),
                     ],
                   ),
                 ),
                 SizedBox(height: 20),
-                Row(
+                reducedCard ?  SizedBox() : Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     //Book Button
-                    Container(
-                      height: 50,
-                      width: 165,
-                      decoration: BoxDecoration(
-                        color: theme.colorScheme.tertiary,
-                        borderRadius: BorderRadius.circular(15)
-                      ),
-                      child: Center(
-                        child: Text(
-                          "Book Now",
-                          style: TextStyle(
-                            color: theme.colorScheme.secondary,
-                            fontWeight: FontWeight.bold
+                    GestureDetector(
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => Bookingpage(doctor: doctor)));
+                      },
+                      child: Container(
+                        height: 50,
+                        width: 165,
+                        decoration: BoxDecoration(
+                          color: theme.colorScheme.tertiary,
+                          borderRadius: BorderRadius.circular(15)
+                        ),
+                        child: Center(
+                          child: Text(
+                            "Book Now",
+                            style: TextStyle(
+                              color: theme.colorScheme.secondary,
+                              fontWeight: FontWeight.bold
+                            ),
                           ),
                         ),
                       ),

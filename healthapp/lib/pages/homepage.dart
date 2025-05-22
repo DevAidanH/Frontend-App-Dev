@@ -51,10 +51,7 @@ class Homepage extends StatelessWidget {
                   itemBuilder: (context, index){
                     final doctor = doctors[index];
                     return Doctorcard(
-                      name: doctor.name, 
-                      hours: doctor.hours, 
-                      imagePath: doctor.imagePath, 
-                      stars: doctor.stars
+                      doctor: doctor,
                     );
                   }
                 ),
