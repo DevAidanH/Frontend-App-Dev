@@ -9,7 +9,7 @@ ThemeData lightMode = ThemeData(
     secondary: Color(0xFFc73f00),
     tertiary: Color(0xFFa8a8a8)
   ),
-  textTheme: GoogleFonts.figtreeTextTheme( 
+  textTheme: GoogleFonts.montserratTextTheme( 
     ThemeData.light().textTheme,
   ).apply(
     bodyColor: const Color(0xFF000000),
