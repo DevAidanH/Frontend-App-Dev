@@ -6,8 +6,8 @@ ThemeData lightMode = ThemeData(
   colorScheme: ColorScheme.light(
     surface: Color(0xFFffffff),
     primary: Color(0xFF000000),
-    secondary: Color(0xFFc73f00),
-    tertiary: Color(0xFFa8a8a8)
+    secondary: Color.fromARGB(255, 228, 86, 20),
+    tertiary: Color.fromARGB(255, 117, 117, 117)
   ),
   textTheme: GoogleFonts.montserratTextTheme( 
     ThemeData.light().textTheme,
